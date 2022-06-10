@@ -1,15 +1,17 @@
 import React from 'react';
 import 'antd/dist/antd.css';
-import './Layout.css';
+import './Navigation.css';
 import { Layout, Menu, Button } from 'antd';
 import DataTable from './DataTable';
-const { Header, Content, Footer } = Layout;
+const { Header, Content } = Layout;
+
+const HEADER_STYLE={display: 'flex', justifyContent: "start"}
+const BUTTON_STYLE={margin: '1em 5% 1em 1em'}
 
 const Navigation = () => (
   <Layout className="layout">
-    <Header style={{display: 'flex', justifyContent: "start"}}>
-    <Button style={{margin: '1em 5% 1em 1em'}} type="primary">Создать</Button>      
-      {/* <div className="logo" /> */}
+    <Header style={HEADER_STYLE}>
+    <Button style={BUTTON_STYLE} type="primary">Создать</Button>      
       <Menu
         theme="dark"
         mode="horizontal"
@@ -32,13 +34,6 @@ const Navigation = () => (
         <DataTable />
       </div>
     </Content>
-    <Footer
-      style={{
-        textAlign: 'center',
-      }}
-    >
-      Ant Design ©2018 Created by Ant UED
-    </Footer>
   </Layout>
 );
 
