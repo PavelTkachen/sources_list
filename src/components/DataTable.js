@@ -1,4 +1,5 @@
 import { Space, Table, Tag } from 'antd';
+import { ExportOutlined, EditOutlined, DeleteOutlined } from '@ant-design/icons';
 import React from 'react';
 const columns = [
   {
@@ -27,12 +28,13 @@ const columns = [
     dataIndex: 'creationDate',
   },
   {
-    title: 'Дейсвтия',
+    title: 'Действия',
     key: 'action',
     render: (_, record) => (
       <Space size="middle">
-        <a>Добавить {record.name}</a>
-        <a>Удалить</a>
+        <ExportOutlined title='Перейти'/>
+        <EditOutlined title='Изменить'/>
+        <DeleteOutlined title='Удалить' style={{color: 'red'}}/>
       </Space>
     ),
   },

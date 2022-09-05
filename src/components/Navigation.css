@@ -17,3 +17,10 @@
     [data-theme="dark"] .site-layout-content {
       background: #141414
     }
+
+    .ant-menu-horizontal::after {
+      display: inline;
+      clear: both;
+      height: 0;
+      content: '\20';
+  }
