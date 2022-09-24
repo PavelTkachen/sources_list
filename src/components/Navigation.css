@@ -24,3 +24,9 @@
       height: 0;
       content: '\20';
   }
+    .ant-modal-body {
+      padding: 10px 23px 10px 23px;
+      font-size: 14px;
+      line-height: 1.5715;
+      word-wrap: break-word;
+  }

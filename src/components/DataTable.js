@@ -1,6 +1,9 @@
 import { Space, Table, Tag } from 'antd';
 import { ExportOutlined, EditOutlined, DeleteOutlined } from '@ant-design/icons';
 import React from 'react';
+
+const DELETE_OUTLINED_ICON_STYLE={color: 'red'}
+
 const columns = [
   {
     title: 'Название',
@@ -34,7 +37,7 @@ const columns = [
       <Space size="middle">
         <ExportOutlined title='Перейти'/>
         <EditOutlined title='Изменить'/>
-        <DeleteOutlined title='Удалить' style={{color: 'red'}}/>
+        <DeleteOutlined title='Удалить' style={DELETE_OUTLINED_ICON_STYLE}/>
       </Space>
     ),
   },
