@@ -1,9 +1,9 @@
 import { ApiProperty } from '@nestjs/swagger';
-import { IsNotEmpty, IsString } from 'class-validator';
+import { IsNotEmpty, IsString, IsNumber } from 'class-validator';
 import { Tab } from '../model/tab.entity';
 export class TabDTO implements Readonly<TabDTO> {
   @ApiProperty({ required: true })
-  @IsString()
+  @IsNumber()
   @IsNotEmpty()
   id: number
 
