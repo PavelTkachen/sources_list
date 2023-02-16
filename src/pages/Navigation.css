@@ -1,0 +1,22 @@
+.site-layout-content {
+  min-height: 280px;
+  padding: 24px;
+  background: #fff;
+}
+.close-circle-outlined {
+  color: red;
+  margin-left: 0.25em;
+  font-size: 1em;
+}
+.content {
+  padding: 50px 50px;
+}
+.header {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.menu {
+  width: 90%;
+  margin: 3em;
+}
