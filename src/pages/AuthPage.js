@@ -7,7 +7,7 @@ const AuthPage = () => (
   <Card className="card" title="Авторизация" headStyle={{textAlign:'center', fontSize:"20px"}}>
     <div className="input__field">
       <p className="text">Имя пользователя</p>
-      <Input className="input" placeholder="Введите логин" />
+      <Input className="input" placeholder="Введите имя пользователя" />
     </div>
     <div className="input__field">
       <p className="text">Пароль</p>
