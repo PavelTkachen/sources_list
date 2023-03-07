@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useState } from "react";
 import "antd/dist/antd.css";
 import { v4 as uuidv4 } from "uuid";
-import "./Navigation.css";
+import "./MainPage.css";
 import { Layout, Menu, Modal } from "antd";
 import { CloseCircleOutlined } from "@ant-design/icons";
 import DataTable from "../components/DataTable";
@@ -10,7 +10,7 @@ import { CustomModal } from "../components/CustomModal";
 import { getItem, setItem } from "../helpers/lsService";
 const { Header, Content } = Layout;
 
-const Navigation = () => {
+const MainPage = () => {
   const [stateList, setStateList] = useState([]);
 
   useEffect(() => {
@@ -104,4 +104,4 @@ const Navigation = () => {
   );
 };
 
-export default Navigation;
+export default MainPage;
